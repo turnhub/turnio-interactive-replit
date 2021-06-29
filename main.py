@@ -22,6 +22,8 @@ def hello_world():
 def interactive():
     json = request.json
 
+    print(repr(json))
+
     if "messages" not in json:
       return ""
 
